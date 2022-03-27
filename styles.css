@@ -1,0 +1,11 @@
+/* stylesheet */
+
+* {
+    background-color: aliceblue;
+    color: rgb(0, 90, 120);
+    font-family: sans-serif;
+    padding: 10px;
+    border: 2px;
+    margin: 10px;
+}
+

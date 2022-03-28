@@ -1,11 +1,240 @@
 /* stylesheet */
 
-* {
-    background-color: aliceblue;
-    color: rgb(0, 90, 120);
-    font-family: sans-serif;
-    padding: 10px;
-    border: 2px;
-    margin: 10px;
+/** {
+    border: 2px solid indigo;
+}*/
+
+html {
+    margin: 0;
+    min-height: 600%;
 }
 
+body { /* all visible content stored inside */
+    /*background-color: #1F2937;*/
+    color: rgb(255, 0, 0); /* default to red, means change color */
+    font-family: sans-serif;
+    font-size: 1.2rem;
+
+    margin: 0rem;
+
+    /*display: flex;
+    flex-direction: column;
+    justify-content: space-between;*/
+}
+
+.header, .content {
+    
+    /* something maybe */
+}
+
+.header { /* container */
+    height: 3rem;
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box; /* subtracts border and padding from height and width */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    /*align-self: center; /* top, middle, or bottom */
+    /*text-align: center; /* left, middle, or right */
+
+    flex: auto;
+
+    position: fixed;
+    top: 0rem;
+    left: 0rem;
+    background-color: rgba(30, 40, 55, 0.9);
+    color: rgb(255, 255, 255);
+}
+
+.headerleft { /* item for now, a container with logo later */
+    text-align: center;
+    align-self: center;
+
+    padding: 0.5rem;
+    margin: 0.5rem;
+
+}
+
+.headerright {
+    text-align: center;
+    align-self: center;
+
+    padding: 0.5rem;
+    margin: 0.5rem;
+
+    color: rgb(200, 200, 200);
+}
+
+.content1, .content2, .content3, .content4, .content5 { /* container */
+    height: auto;
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+    margin-left: 0rem;
+    flex-direction: column;
+
+    flex: auto;
+
+    margin: 0rem;
+}
+
+.content1 {
+    padding-top: 5rem;
+}
+
+.content1, .content5 {
+    background-color: #1F2937;
+}
+
+.content2, .content4 {
+    background-color: #ffffff;
+}
+
+.content3 {
+    background-color: #1F2937;
+}
+
+.layer1 { /* container */
+    padding: 0.4rem;
+    box-sizing: border-box; /* subtracts border and padding from height and width */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+
+}
+
+.layer1left { /* container */
+    height: 15rem;
+    width: 500px;
+
+    padding: 1rem;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    box-sizing: border-box; /* subtracts border and padding from height and width */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    color: rgb(255, 255, 255);
+
+}
+
+.left1, .left2 {
+    margin: 0.1rem;
+}
+
+.left1 {
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: 600;
+}
+
+.left2 {
+    font-size: 18px;
+    color: #E5E7EB;
+    font-weight: 200;
+}
+
+.left3 {
+    font-size: 24px;
+    color: #F9FAF8;
+    font-weight: 500;
+
+    margin: 0.3rem;
+    padding: 0.3rem;
+
+    border-radius: 0.5rem;
+    background-color: #2772F6;
+}
+
+.layer1right { /* container */
+
+    height: 15rem;
+    width: 25rem;
+
+    padding: 1rem;
+    padding-top: 0;
+    padding-bottom: 0;
+
+    box-sizing: border-box; /* subtracts border and padding from height and width */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: rgb(255, 255, 255);
+
+    background-color: gray;
+}
+
+.layer2 { /* container */
+    padding: 0.4rem;
+    box-sizing: border-box; /* subtracts border and padding from height and width */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+}
+
+.layer2title {
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 600;
+}
+
+.layer2imgs {
+    height: auto;
+    width: 100%;
+
+    padding: 1rem;
+
+    box-sizing: border-box; /* subtracts border and padding from height and width */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+
+    color: rgb(0, 0, 0);
+}
+
+.layer2img {
+    height: 10rem;
+    width: 10rem;
+
+    border-radius: 0.5em;
+    background-color: gray;
+
+    text-align: center;
+    align-self: center;
+}
+
+.layer2subtexts{
+    height: auto;
+    width: 100%;
+
+    padding: 1rem;
+
+    box-sizing: border-box; /* subtracts border and padding from height and width */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+
+    color: rgb(0, 0, 0);
+}
+
+.layer2subtext {
+    height: 100px;
+    width: 120px;
+
+    border-radius: 0.5rem;
+}

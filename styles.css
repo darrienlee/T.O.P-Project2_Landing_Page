@@ -6,7 +6,7 @@
 
 html {
     margin: 0;
-    min-height: 600%;
+    /*min-height: 600%;*/
 }
 
 body { /* all visible content stored inside */
@@ -16,15 +16,11 @@ body { /* all visible content stored inside */
     font-size: 1.2rem;
 
     margin: 0rem;
+    padding: 0rem;
 
     /*display: flex;
     flex-direction: column;
     justify-content: space-between;*/
-}
-
-.header, .content {
-    
-    /* something maybe */
 }
 
 .header { /* container */
@@ -58,8 +54,18 @@ body { /* all visible content stored inside */
 }
 
 .headerright {
+    height: auto;
+    width: 50%;
+    padding: 1rem;
+    box-sizing: border-box; /* subtracts border and padding from height and width */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
     text-align: center;
     align-self: center;
+    justify-content: space-around;
 
     padding: 0.5rem;
     margin: 0.5rem;
@@ -70,18 +76,15 @@ body { /* all visible content stored inside */
 .content1, .content2, .content3, .content4, .content5 { /* container */
     height: auto;
     width: 100%;
-    padding: 1rem;
+    padding: 3rem;
     box-sizing: border-box;
-    margin-left: 0rem;
     flex-direction: column;
+    justify-content: space-between;
+    display: flex;
 
     flex: auto;
 
     margin: 0rem;
-}
-
-.content1 {
-    padding-top: 5rem;
 }
 
 .content1, .content5 {
@@ -90,10 +93,25 @@ body { /* all visible content stored inside */
 
 .content2, .content4 {
     background-color: #ffffff;
+
+    /*align-items: center;
+    align-content: center;*/
+}
+
+.content1 {
+    padding-top: 7rem;
 }
 
 .content3 {
-    background-color: #1F2937;
+    background-color: #E5E7EB;
+}
+
+.layer1, .layer2, .layer3, .layer4 {
+    height: auto;
+    width: 70%;
+
+    font-size: 1rem;
+    align-self: center;
 }
 
 .layer1 { /* container */
@@ -108,8 +126,8 @@ body { /* all visible content stored inside */
 }
 
 .layer1left { /* container */
-    height: 15rem;
-    width: 500px;
+    height: auto;
+    width: 25rem;
 
     padding: 1rem;
     padding-top: 0;
@@ -130,35 +148,58 @@ body { /* all visible content stored inside */
 }
 
 .left1 {
-    font-size: 48px;
+    font-size: 3rem;
     color: #F9FAF8;
     font-weight: 600;
 }
 
 .left2 {
-    font-size: 18px;
+    font-size: 1rem;
     color: #E5E7EB;
     font-weight: 200;
 }
 
 .left3 {
-    font-size: 24px;
-    color: #F9FAF8;
-    font-weight: 500;
+    height: 3rem;
+    width: 7rem;
 
-    margin: 0.3rem;
-    padding: 0.3rem;
+    color: #F9FAF8;
+    font-weight: 700;
+    font-size: 1rem;
+    text-align: center;
+
+    margin: 0.7rem;
 
     border-radius: 0.5rem;
     background-color: #2772F6;
+    border: 0.1rem #2772F6;
+}
+
+.layer1left button:hover {
+    height: 3rem;
+    width: 7rem;
+
+    color: #2772F6;
+    font-weight: 700;
+    font-size: 1rem;
+    text-align: center;
+
+    margin: 0.7rem;
+
+    border-radius: 0.5rem;
+    background-color: white;
+    border: 0.1rem solid white;
+
+    cursor: pointer;
 }
 
 .layer1right { /* container */
 
-    height: 15rem;
+    height: auto;
     width: 25rem;
+    border-radius: 0.3rem;
 
-    padding: 1rem;
+    padding: 0.3rem;
     padding-top: 0;
     padding-bottom: 0;
 
@@ -167,10 +208,19 @@ body { /* all visible content stored inside */
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 
     color: rgb(255, 255, 255);
 
     background-color: gray;
+}
+
+.layer1right img {
+    display: flex;
+    width: 100%;
+    padding: 0.3rem;
+    border-radius: 0.3rem;
+
 }
 
 .layer2 { /* container */
@@ -207,10 +257,10 @@ body { /* all visible content stored inside */
 }
 
 .layer2img {
-    height: 10rem;
-    width: 10rem;
+    height: 7rem;
+    width: 7rem;
 
-    border-radius: 0.5em;
+    border-radius: 0.5rem;
     background-color: gray;
 
     text-align: center;
@@ -236,5 +286,127 @@ body { /* all visible content stored inside */
     height: 100px;
     width: 120px;
 
+    font-size: 1rem;
     border-radius: 0.5rem;
+}
+
+.layer3 { /* container */
+    padding: 0.4rem;
+    box-sizing: border-box; /* subtracts border and padding from height and width */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+}
+
+.layer3quote {
+    height: auto;
+    width: 60%;
+
+    color: #1F2937;
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+.layer3author {
+    height: auto;
+    width: 60%;
+    align-self: right;
+
+    color: black;
+    font-weight: 600;
+    text-align: right;
+    font-size: 1.3rem;
+}
+
+.layer4 { /* container */
+    padding: 2rem;
+    box-sizing: border-box; /* subtracts border and padding from height and width */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+
+    height: auto;
+    width: 70%;
+
+    background-color: #3882F6;
+    color: white;
+    border-radius: 0.3rem;
+}
+
+.layer4left {
+    height: auto;
+    width: 60%;
+
+    font-size: 1rem;
+    text-align: left;
+}
+
+.layer4action {
+    height: auto;
+    width: auto;
+    align-self: left;
+
+    text-align: left;
+    font-size: 1.3rem;
+}
+
+.layer4subtext {
+    height: auto;
+    width: auto;
+    align-self: center;
+
+    text-align: left;
+    font-size: 0.7rem;
+}
+
+
+.layer4button {
+    height: 3rem;
+    width: 7rem;
+
+    color: white;
+    font-weight: 700;
+    font-size: 1rem;
+    text-align: center;
+
+    margin: 0.7rem;
+
+    border-radius: 0.5rem;
+    background-color: #3882F6;
+    border: 0.1rem solid white;
+}
+
+.layer4 button:hover {
+    height: 3rem;
+    width: 7rem;
+
+    color: #2772F6;
+    font-weight: 700;
+    font-size: 1rem;
+    text-align: center;
+
+    margin: 0.7rem;
+
+    border-radius: 0.5rem;
+    background-color: white;
+    border: 0.1rem #3882F6;
+
+    cursor: pointer;
+}
+
+.footer {
+    height: auto;
+    width: 60%;
+
+    color: white;
+
+    font-size: 1rem;
+    text-align: center;
+    align-self: center;
 }

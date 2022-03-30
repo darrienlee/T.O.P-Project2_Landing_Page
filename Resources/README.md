@@ -1,6 +1,6 @@
 ## Resource Links
 
-Landscape picture: https://wallpaperaccess.com/scene-anime/
+Landscape picture: https://wallpaperaccess.com/scene-anime
 
 Hu Tao: https://www.pinterest.com/pin/792211390706130866/
 
